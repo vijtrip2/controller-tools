@@ -42,7 +42,7 @@ func (Generator) Help() *markers.DefinitionHelp {
 			},
 			"AllowDangerousTypes": markers.DetailedHelp{
 				Summary: "allows types which are usually omitted from CRD generation because they are not recommended. ",
-				Details: "Currently the following additional types are allowed when this is true: float32 float64 \n Left unspecified, the default is false",
+				Details: "Currently the following additional types are allowed when this is true: float32 float64 nestedMaps(Ex: map[string]map[string]string) \n Left unspecified, the default is false",
 			},
 			"MaxDescLen": markers.DetailedHelp{
 				Summary: "specifies the maximum description length for fields in CRD's OpenAPI schema. ",
